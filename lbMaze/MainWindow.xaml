@@ -1,0 +1,30 @@
+﻿<Window x:Class="lbMaze.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:lbMaze"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="278" Width="229">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="0*"/>
+        </Grid.ColumnDefinitions>
+        <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Margin="584,202,0,0" Text="TextBlock" TextWrapping="Wrap" VerticalAlignment="Top" Grid.Column="1" Height="144" Width="7"/>
+        <TextBox x:Name="textWidth" HorizontalAlignment="Left" Margin="135,32,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="70" Height="30" FontSize="18"/>
+        <TextBox x:Name="textHeight" HorizontalAlignment="Left" Margin="135,74,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="70" Height="30" FontSize="18"/>
+        <Label x:Name="labelWidth" Content="Width(4-50):" HorizontalAlignment="Left" Margin="10,27,0,0" VerticalAlignment="Top" FontSize="18" RenderTransformOrigin="0.669,0.051" Height="34" Width="109"/>
+        <Label x:Name="labelHeight" Content="Height(4-50):" HorizontalAlignment="Left" Margin="10,70,0,0" VerticalAlignment="Top" FontSize="18" RenderTransformOrigin="0.669,0.051" Height="34" Width="115"/>
+        <Button x:Name="button" Content="Generate" HorizontalAlignment="Left" Margin="10,202,0,0" VerticalAlignment="Top" FontSize="18" Click="button_Click"/>
+        <Label x:Name="labelstart" Content="Starting at:" HorizontalAlignment="Left" Margin="10,113,0,0" VerticalAlignment="Top" FontSize="18" RenderTransformOrigin="0.669,0.051" Height="34" Width="115"/>
+        <TextBox x:Name="textStartX" HorizontalAlignment="Left" Margin="135,117,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="30" Height="30" FontSize="18"/>
+        <TextBox x:Name="textStartY" HorizontalAlignment="Left" Margin="175,117,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="30" Height="30" FontSize="18"/>
+        <Label x:Name="label" Content="," HorizontalAlignment="Left" Margin="162,121,0,0" VerticalAlignment="Top" FontSize="18" Height="30" Width="15"/>
+        <Label x:Name="labelend" Content="Ending at:" HorizontalAlignment="Left" Margin="10,151,0,0" VerticalAlignment="Top" FontSize="18" RenderTransformOrigin="0.669,0.051" Height="34" Width="116"/>
+        <TextBox x:Name="textEndX" HorizontalAlignment="Left" Margin="135,155,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="30" Height="30" FontSize="18"/>
+        <TextBox x:Name="textEndY" HorizontalAlignment="Left" Margin="175,155,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="30" Height="30" FontSize="18"/>
+        <Label x:Name="label_Copy" Content="," HorizontalAlignment="Left" Margin="162,159,0,0" VerticalAlignment="Top" FontSize="18" Height="30" Width="16"/>
+
+    </Grid>
+</Window>
